@@ -1,55 +1,107 @@
 # YT Downloader
 
-## Opis projektu
-YT Downloader to narzędzie do pobierania filmów z YouTube.
+## Project Description
+YT Downloader is a versatile tool for downloading YouTube videos with a simple and intuitive interface.
 
-## Instalacja
-
-### Wymagania
+## System Requirements
 - Python 3.7+
-- pip
-- git
+- Operating Systems: 
+  * Windows 10/11
+  * macOS 10.14+
+  * Linux (Ubuntu 20.04+, Debian 10+)
 
-### Krok po kroku
-1. Sklonuj repozytorium
+## Installation
+
+### Windows
+1. Clone the repository:
 ```bash
 git clone https://github.com/sojkin/ytdownloader.git
 cd ytdownloader
 ```
 
-2. Utwórz środowisko wirtualne
+2. Create a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+venv\Scripts\activate
 ```
 
-3. Zainstaluj zależności
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Uruchomienie
+### macOS/Linux
+1. Clone the repository:
+```bash
+git clone https://github.com/sojkin/ytdownloader.git
+cd ytdownloader
+```
 
-### Tryb konsolowy
+2. Create a virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Application
+
+### Console Mode
 ```bash
 python src/main.py
 ```
 
-### Tryb graficzny
+### GUI Mode
 ```bash
 python src/gui.py
 ```
 
-## Funkcje
-- Pobieranie filmów z YouTube
-- Wybór jakości wideo
-- Zapis w wybranej lokalizacji
+## Configuration
 
-## Rozwiązywanie problemów
-- Upewnij się, że masz najnowszą wersję
-- Sprawdź połączenie internetowe
-- Zaktualizuj zależności: `pip install -r requirements.txt`
+### Environment Variables
+- `DOWNLOAD_PATH`: Download directory (default: `~/Downloads/YTDownloader`)
+- `MAX_DOWNLOAD_QUALITY`: Maximum download quality (default: 720p)
 
-## Licencja
+## Troubleshooting
+
+### Common Issues
+- No internet connection
+- Outdated YouTube API
+- Insufficient permissions
+
+### Updating
+```bash
+git pull origin master
+pip install -r requirements.txt
+```
+
+## Features
+- Download YouTube videos
+- Select video quality
+- Customize download location
+- Support for multiple platforms
+
+## Security
+- Regularly update the software
+- Use official download sources
+- Respect copyright laws when downloading content
+
+## License
 MIT License
+
+## Authors
+- Marcin Sojka (@sojkin)
+
+## Support
+Report issues: https://github.com/sojkin/ytdownloader/issues
+
+## Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
